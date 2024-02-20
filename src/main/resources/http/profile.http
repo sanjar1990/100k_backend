@@ -1,0 +1,70 @@
+### update profile address
+PUT localhost:8080/api/v1/profile/updateAddress
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDUwNjgwMDEsImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQ1VTVE9NRVIiLCJleHAiOjE3MDUxNTQ0MDEsImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.bnTxNEyb2wr7uhnm77goDSeQEuS3C9KsndkSP8EuiGDndAUxAKJawMd5HGHv6LTDRfASUI1t2isfPvnLxyZjrQ
+
+{
+  "address": "nukus street"
+}
+### update profile address
+PUT localhost:8080/api/v1/profile/updatePhoto
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDUzMTY2NDIsImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQ1VTVE9NRVIiLCJleHAiOjE3MDU0MDMwNDIsImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.1tJZWEYsUzNeEmwE2i0J5Ws47WTPmXfUXfMj4DZi-ALxpxSzsGHLCR6eqs8uIhhNn5SyViZp5u174eZO7B1uxQ
+
+{
+  "attachId": "ee815fff-afaf-4263-ac8f-1a601b07fb14"
+}
+
+### send verification code
+
+POST localhost:8080/api/v1/profile/sendVerificationCode
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDU0MTE4MDksImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQ1VTVE9NRVIiLCJleHAiOjE3MDU0OTgyMDksImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.xLgZt7zDUVUgHfULiOAj3bl6dkxnJ5LWauaOK2JRJW9Zj5OUqtGjYQzgq64c5hZY6j1E0fLkxBVzKAHNaVLVOg
+
+{
+  "email": "dilnoza19980305@gmail.com"
+}
+
+### verify code
+
+POST localhost:8080/api/v1/profile/verifyCode
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDU0ODExMzksImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQ1VTVE9NRVIiLCJleHAiOjE3MDU1Njc1MzksImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.eikC4uVdjafAcmKmA36UvSuwhJW_OB0-hb7-33DT58fS7HrDQv3nY48vpoZpF25spD0iDDl62Cmc9noUBclj3g
+
+{
+  "email": "dilnoza19980305@gmail.com",
+  "password": "123456",
+  "code": "346747"
+}
+
+### change password
+
+POST localhost:8080/api/v1/profile/changePassword
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDU0ODExMzksImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQ1VTVE9NRVIiLCJleHAiOjE3MDU1Njc1MzksImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.eikC4uVdjafAcmKmA36UvSuwhJW_OB0-hb7-33DT58fS7HrDQv3nY48vpoZpF25spD0iDDl62Cmc9noUBclj3g
+
+{
+  "oldPassword": "123456",
+  "newPassword": "123457"
+}
+
+### get StaffList
+GET localhost:8080/api/v1/profile/getStaffList
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDU4NDk1NDAsImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE3MDU5MzU5NDAsImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.qdJxdK7JZl0hhHQXnAqFlz9SMNc7et8Y9MaLBHzl7yvey8ZWczU_Pj_xDB4tr_FHwELqpum_sFSjBavrxB2B2w
+
+### delete staff
+DELETE localhost:8080/api/v1/profile/deleteStaff?email=eeeeee@gmail.com
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDYwMTIxMTcsImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE3MDYwOTg1MTcsImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.mL-ODxzCoANa2rYRQXPc5HEZ7tNfawRCRlWVAJ6ZrHv-ltC0jAR-BxEnjXdceIPDSh5rwSrPHLsEmYTjyiXBDQ
+
+### filter pagination
+POST localhost:8080/api/v1/profile/searchPagination?page=1&size=10
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY2MTc0NTgsImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE3MDY3MDM4NTgsImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.DA2YBA_AldELhpDWcvwGdWhUnCE7CtHtaHFjOsCq4a2eA3vrVGPcUWnXdE8u_k16Fc-b6KAbm-qbvqcR3FpiZw
+
+{
+  "birthDateFrom":"2000-01-01",
+  "birthDateTo":"2023-03-01"
+}
+

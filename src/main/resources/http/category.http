@@ -1,0 +1,14 @@
+### create category
+POST localhost:8080/api/v1/category/createCategory
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY2OTk5MjMsImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE3MDc5OTU5MjMsImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.0PoByjw2uBxpmHDLo9IqtwTYzczNEKSZ5CSmrFK6o1XOJ7BlN_rnHBN89uRXu291Q5a2sBwdogXovbFuAv4f_w
+
+{
+  "name": "Telefonlar",
+  "orderNum": 2,
+  "attachId": "e9b6d011-aad4-4daa-8337-5e01a90a225a"
+
+}
+### get category list
+GET localhost:8080/api/v1/category/getCategory
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY2OTk5MjMsImlkIjozLCJlbWFpbCI6InJ1bm5lcnBybzE5OTBAZ21haWwuY29tIiwicm9sZSI6IlJPTEVfQURNSU4iLCJleHAiOjE3MDc5OTU5MjMsImlzcyI6InlvdXR1YmUgYnkgU2FuamFyIn0.0PoByjw2uBxpmHDLo9IqtwTYzczNEKSZ5CSmrFK6o1XOJ7BlN_rnHBN89uRXu291Q5a2sBwdogXovbFuAv4f_w

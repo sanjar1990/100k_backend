@@ -1,0 +1,15 @@
+### upload
+POST localhost:8080/api/v1/attach/public/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="product1.png"
+
+< C:\Users\sanja\OneDrive\Рабочий стол\product1.png
+
+### 2. Get Attach By Id (Open) image
+GET localhost:8080/api/v1/attach/public/3255e9ef-ce6b-40cc-9506-2315691ef1aa/img
+###  3. Download Attach (Download)
+GET localhost:8080/api/v1/attach/public/download/90ba96ab-53e3-4335-a939-77218d11d590
+###  5. Delete Attach (delete from db and system) (ADMIN)
+DELETE localhost:8080/api/v1/attach/public/90ba96ab-53e3-4335-a939-77218d11d590
